@@ -40,12 +40,14 @@
 ### 移除卡幀圖片並轉換為**ReID**資料集
 在數據預處理過程中，我們使用均方誤差（MSE）計算來移除卡幀的圖片，然後將處理過的圖片轉換成**ReID**資料集格式。具體步驟如下：
 1. **移除卡幀圖片**
-    #### 首先，使用 AICUP_MSE_Frame_Skipping_Handling.py來計算並移除卡幀圖片，並輸出到一個新的資料夾。輸出路徑：`trainv2_Frame_Skipping_Handling/images`
+    #### 首先，使用 AICUP_MSE_Frame_Skipping_Handling.py來計算並移除卡幀圖片，並輸出到一個新的資料夾。
+    #### 輸出路徑：`trainv2_Frame_Skipping_Handling/images`
     ```
     python fast_reid/datasets/AICUP_MSE_Frame_Skipping_Handling.py
     ```
 2. 生成處理後的資料集標籤
-    #### 接著使用AICUP_MSE_Frame_Skipping_Handling_label.py來輸出處理後的標籤。輸出路徑：`trainv2_Frame_Skipping_Handling/labels`
+    #### 接著使用AICUP_MSE_Frame_Skipping_Handling_label.py來輸出處理後的標籤。
+    #### 輸出路徑：`trainv2_Frame_Skipping_Handling/labels`
     ```
     python fast_reid/datasets/AICUP_MSE_Frame_Skipping_Handling_label.py
     ```
