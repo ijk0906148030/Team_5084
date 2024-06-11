@@ -21,7 +21,8 @@
 ## Yolov7訓練
     
 1. 準備Yolov7資料集
-    #### 訓練集([trainv2](https://drive.google.com/file/d/1mTDO0SYJ_yzT7PEYYfcCVxsZ1g-AYUgd/view?usp=sharing))及測試集([32_33_AI_CUP_testdataset](https://drive.google.com/file/d/10pBjA7Pc_i6ccnoGLDEsj_eLzTvklizR/view?usp=drive_link))。 
+    - 訓練集([trainv2](https://drive.google.com/file/d/1mTDO0SYJ_yzT7PEYYfcCVxsZ1g-AYUgd/view?usp=sharing))
+    - 測試集([32_33_AI_CUP_testdataset](https://drive.google.com/file/d/10pBjA7Pc_i6ccnoGLDEsj_eLzTvklizR/view?usp=drive_link)) 
     #### 輸出路徑：`yolo_datasets_random`
     ```
     python yolov7/tools/AICUP_to_YOLOv7_datasets_random.py
