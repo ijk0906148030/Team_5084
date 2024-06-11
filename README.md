@@ -133,9 +133,9 @@ python Real-ESRGAN-master/inference_realesrgan.py -n RealESRGAN_x4plus --face_en
 #### 測試時，請注意不要跟訓練時的路徑產生衝突
 
 權重載點及放置路徑：
-   - YOLOv7 權重路徑：YOLO_WEIGHT/[best.pt](https://drive.google.com/drive/folders/1XWDbEw2Z9C2leSAiNn7hhLxgf1eNK6QP?usp=drive_link)
+   - YOLOv7 權重路徑：YOLO_WEIGHT/ [best.pt](https://drive.google.com/drive/folders/1XWDbEw2Z9C2leSAiNn7hhLxgf1eNK6QP?usp=drive_link)
    - ReID 模型配置文件路徑：REID_WEIGHT/final_data_resnext50_V19_CE_TRI_COS/config.yaml
-   - ReID 權重路徑：REID_WEIGHT/final_data_resnext50_V19_CE_TRI_COS/[model_final.pth](https://drive.google.com/drive/folders/1E_x8MCk6kAjdOUD_HaWGZ1nBTYLtf5qP?usp=drive_link)
+   - ReID 權重路徑：REID_WEIGHT/final_data_resnext50_V19_CE_TRI_COS/ [model_final.pth](https://drive.google.com/drive/folders/1E_x8MCk6kAjdOUD_HaWGZ1nBTYLtf5qP?usp=drive_link)
 #### 最終提交的評估答案：
 ```
 detect_MOT15/Public_Priavte_MOT15
