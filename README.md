@@ -104,7 +104,7 @@ python Real-ESRGAN-master/inference_realesrgan.py -n RealESRGAN_x4plus --face_en
 
 
 ## Inference
-#### 本項目的推理（**Inference**）是使用`trake_all_timestamps.bat`來執行`final_mc_demo_yolov7.py`，**請使用者自行更改執行路徑**。
+#### 本項目的推理（**Inference**）是使用官方給予的`track_all_timestamps.sh`改成`trake_all_timestamps.bat`來執行`final_mc_demo_yolov7.py`，**請使用者自行更改執行路徑**。
 #### 參數調整路徑：`tools/final_mc_demo_yolov7.py`
 #### 輸出路徑：`runs/detect/final_public_private/e6e_test_0.65_box_200`
 ```
@@ -133,7 +133,7 @@ python Real-ESRGAN-master/inference_realesrgan.py -n RealESRGAN_x4plus --face_en
 ## Public & Private
 
 #### 在Public & Private的推理中，我們最後使用的模型權重：
-#### 測試時，請注意不要跟訓練時的路徑產生衝突
+#### 測試時，請更改`trake_all_timestamps.bat`裡的`target_path`
 
 權重載點及放置路徑：
    - YOLOv7 權重路徑：YOLO_WEIGHT/[best.pt](https://drive.google.com/drive/folders/1XWDbEw2Z9C2leSAiNn7hhLxgf1eNK6QP?usp=drive_link)
