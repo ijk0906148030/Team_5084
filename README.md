@@ -21,13 +21,14 @@
 ## Yolov7訓練
     
 1. 準備Yolov7資料集
-   
+    #### 由於檔案過大，訓練集(trainv2)及測試集(32_33_AI_CUP_testdataset)請自行加入至 Team_5084_AICUP_BoT_SORT。 
     #### 輸出路徑：`yolo_datasets_random`
     ```
     python yolov7/tools/AICUP_to_YOLOv7_datasets_random.py
     ```
 2. 開始訓練
-   
+    
+    #### pretrain載點及放置路徑：yolov7/pretrain/[yolov7-w6_training.pt](https://drive.google.com/drive/folders/1kSvA6zpf8AKdbX3ffw6SJvmFUaJXvAoL?usp=drive_link)
     訓練結果圖以及權重路徑：`runs/train/Yolov7_datasets_random_epoch_100`
     ```
     python yolov7/train_aux.py
@@ -75,6 +76,7 @@
     ```
 ### 使用 Real-ESRGAN 增強**ReID**資料集
 最後，我們使用來自其他作者的 Real-ESRGAN 對**ReID**資料集進行增強，會先輸出一個臨時資料夾讓使用者觀察增強情況，並將增強後的數據存回**ReID**資料集。
+#### 權重載點(weights)及放置路徑：Real-ESRGAN-master/weights/[RealESRGAN_x4plus.pth](https://drive.google.com/drive/folders/1ME5_t9Lut-ZJ7qS5vuvvq8w7Gs2wj6Cv?usp=drive_link)
 #### 臨時資料夾路徑：`REID_datasets/temp_1024_Real_ESRGAN`
 #### 輸出路徑：`REID_datasets/day-night_card_detection_ESRGAN/AICUP-ReID/bounding_box_train`
 ```
@@ -129,9 +131,11 @@ python Real-ESRGAN-master/inference_realesrgan.py -n RealESRGAN_x4plus --face_en
 
 #### 在Public & Private的推理中，我們最後使用的模型權重：
 #### 測試時，請注意不要跟訓練時的路徑產生衝突
-   - YOLOv7 權重文件路徑：`YOLO_WEIGHT/best.pt`
-   - ReID 模型配置文件路徑：`REID_WEIGHT/final_data_resnext50_V19_CE_TRI_COS/config.yaml`
-   - ReID 權重文件路徑：`REID_WEIGHT/final_data_resnext50_V19_CE_TRI_COS/model_final.pth`
+
+權重載點及放置路徑：
+   - YOLOv7 權重路徑：YOLO_WEIGHT/[best.pt](https://drive.google.com/drive/folders/1XWDbEw2Z9C2leSAiNn7hhLxgf1eNK6QP?usp=drive_link)
+   - ReID 模型配置文件路徑：REID_WEIGHT/final_data_resnext50_V19_CE_TRI_COS/config.yaml
+   - ReID 權重路徑：REID_WEIGHT/final_data_resnext50_V19_CE_TRI_COS/[model_final.pth](https://drive.google.com/drive/folders/1E_x8MCk6kAjdOUD_HaWGZ1nBTYLtf5qP?usp=drive_link)
 #### 最終提交的評估答案：
 ```
 detect_MOT15/Public_Priavte_MOT15
