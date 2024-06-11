@@ -1,0 +1,21 @@
+_BASE_: ../Base-SBS.yml
+
+MODEL:
+  BACKBONE:
+    NAME: build_resnest_backbone
+  # HEADS:
+  #   NECK_FEAT: after
+  #   POOL_LAYER: GeneralizedMeanPoolingP
+  #   CLS_LAYER: CircleSoftmax
+  #   SCALE: 64
+  #   MARGIN: 0.35
+
+DATASETS:
+  NAMES: ("AICUP",)
+  TESTS: ("AICUP",)
+
+# INPUT:
+#   SIZE_TRAIN: [ 1280, 720]
+#   SIZE_TEST: [ 1280, 720 ]
+
+OUTPUT_DIR: logs/AICUP/sbs_S50

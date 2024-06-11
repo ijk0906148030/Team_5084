@@ -1,0 +1,50 @@
+_BASE_: ../Base-bagtricks.yml
+
+INPUT:
+  SIZE_TRAIN: [256, 256]
+  SIZE_TEST: [256, 256]
+
+  REA:
+    ENABLED: True
+    PROB: 0.3 
+
+  FLIP:
+    ENABLED: True
+    PROB: 0.5
+
+  PADDING:
+    ENABLED: False
+
+MODEL:
+  BACKBONE:
+    NAME: build_resnext_backbone
+    DEPTH: 50x
+    PRETRAIN: False
+    PRETRAIN_PATH: ''
+    WITH_IBN: True 
+    WITH_SE: True  
+    WITH_NL: False
+
+  HEADS:
+    NUM_CLASSES: 4967
+    NECK_FEAT: before
+    CLS_LAYER: Linear #Linear ArcSoftmax
+    POOL_LAYER: GeneralizedMeanPoolingP
+
+DATASETS:
+  NAMES: ("AICUP",)
+  TESTS: ("AICUP",)
+
+SOLVER:
+  BIAS_LR_FACTOR: 1.
+  IMS_PER_BATCH: 128
+  MAX_EPOCH: 60
+  STEPS: [20,40]
+  WARMUP_ITERS: 2000
+  CHECKPOINT_PERIOD: 1
+
+TEST:
+  EVAL_PERIOD: 1000 # We didn't provide eval dataset
+  IMS_PER_BATCH: 128
+
+OUTPUT_DIR: logs/AICUP_115/final_data_resnext50_V19_CE_TRI_COS
