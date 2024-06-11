@@ -140,6 +140,5 @@ python Real-ESRGAN-master/inference_realesrgan.py -n RealESRGAN_x4plus --face_en
    - ReID 模型配置文件路徑：REID_WEIGHT/final_data_resnext50_V19_CE_TRI_COS/config.yaml
    - ReID 權重路徑：REID_WEIGHT/final_data_resnext50_V19_CE_TRI_COS/[model_final.pth](https://drive.google.com/drive/folders/1E_x8MCk6kAjdOUD_HaWGZ1nBTYLtf5qP?usp=drive_link)
 #### 最終提交的評估答案：
-```
-detect_MOT15/Public_Priavte_MOT15
-```
+
+`detect_MOT15/Public_Priavte_MOT15`
