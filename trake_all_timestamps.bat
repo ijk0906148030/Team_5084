@@ -22,8 +22,8 @@ REM 遍历目标路径下的所有文件夹
 for /d %%i in (*) do (
     set "absolute_path=%target_path%\%%i"
     echo "!absolute_path!"
-    REM 执行 Python 指令 請更改路徑 "your_path\Team_5084_AICUP_BoT_SORT"
-    pushd "E:\AI_CUP\AI-driven_Future\Team_5084_AICUP_BoT_SORT"   
+    REM 执行 Python 指令 請更改路徑 "your_path\Team_5084-main"
+    pushd "E:\AI_CUP\AI-driven_Future\Team_5084-main"   
     python tools\final_mc_demo_yolov7.py --source "!absolute_path!" --name "%%i"
     popd
 
