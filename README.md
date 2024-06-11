@@ -21,7 +21,7 @@
 ## Yolov7訓練
     
 1. 準備Yolov7資料集
-    #### 由於檔案過大，訓練集(trainv2)及測試集(32_33_AI_CUP_testdataset)請自行加入至 Team_5084-main。 
+    #### 訓練集([trainv2](https://drive.google.com/file/d/1mTDO0SYJ_yzT7PEYYfcCVxsZ1g-AYUgd/view?usp=sharing))及測試集([32_33_AI_CUP_testdataset](https://drive.google.com/file/d/10pBjA7Pc_i6ccnoGLDEsj_eLzTvklizR/view?usp=drive_link))。 
     #### 輸出路徑：`yolo_datasets_random`
     ```
     python yolov7/tools/AICUP_to_YOLOv7_datasets_random.py
@@ -133,9 +133,9 @@ python Real-ESRGAN-master/inference_realesrgan.py -n RealESRGAN_x4plus --face_en
 #### 測試時，請注意不要跟訓練時的路徑產生衝突
 
 權重載點及放置路徑：
-   - YOLOv7 權重路徑：YOLO_WEIGHT/ [best.pt](https://drive.google.com/drive/folders/1XWDbEw2Z9C2leSAiNn7hhLxgf1eNK6QP?usp=drive_link)
+   - YOLOv7 權重路徑：YOLO_WEIGHT/[best.pt](https://drive.google.com/drive/folders/1XWDbEw2Z9C2leSAiNn7hhLxgf1eNK6QP?usp=drive_link)
    - ReID 模型配置文件路徑：REID_WEIGHT/final_data_resnext50_V19_CE_TRI_COS/config.yaml
-   - ReID 權重路徑：REID_WEIGHT/final_data_resnext50_V19_CE_TRI_COS/ [model_final.pth](https://drive.google.com/drive/folders/1E_x8MCk6kAjdOUD_HaWGZ1nBTYLtf5qP?usp=drive_link)
+   - ReID 權重路徑：REID_WEIGHT/final_data_resnext50_V19_CE_TRI_COS/[model_final.pth](https://drive.google.com/drive/folders/1E_x8MCk6kAjdOUD_HaWGZ1nBTYLtf5qP?usp=drive_link)
 #### 最終提交的評估答案：
 ```
 detect_MOT15/Public_Priavte_MOT15
