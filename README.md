@@ -13,7 +13,7 @@
     ```
 3. 安裝其他套件
     ```
-    <cd Team_5084_AICUP_BoT_SORT>
+    <cd Team_5084-main>
     pip install -r requirements.txt
     conda install pycocotools -c conda-forge
     conda install faiss-gpu -c conda-forge
