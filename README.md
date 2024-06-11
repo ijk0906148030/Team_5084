@@ -21,7 +21,7 @@
 ## Yolov7訓練
     
 1. 準備Yolov7資料集
-    #### 由於檔案過大，訓練集(trainv2)及測試集(32_33_AI_CUP_testdataset)請自行加入至 Team_5084_AICUP_BoT_SORT。 
+    #### 由於檔案過大，訓練集(trainv2)及測試集(32_33_AI_CUP_testdataset)請自行加入至 Team_5084-main。 
     #### 輸出路徑：`yolo_datasets_random`
     ```
     python yolov7/tools/AICUP_to_YOLOv7_datasets_random.py
