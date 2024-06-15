@@ -29,7 +29,7 @@
     ```
 2. 開始訓練
     
-    #### pretrain載點及放置路徑：yolov7/pretrained/[yolov7-w6_training.pt](https://drive.google.com/drive/folders/1kSvA6zpf8AKdbX3ffw6SJvmFUaJXvAoL?usp=drive_link)
+    #### pretrain載點及放置路徑：yolov7/pretrained/[yolov7-w6.pt](https://drive.google.com/drive/folders/1kSvA6zpf8AKdbX3ffw6SJvmFUaJXvAoL?usp=drive_link)
     訓練結果圖以及權重路徑：`runs/train/Yolov7_datasets_random_epoch_100`
     ```
     python yolov7/train_aux.py
