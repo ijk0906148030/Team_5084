@@ -15,7 +15,7 @@ sys.path.append('.')
 
 from yolov7.models.experimental import attempt_load
 from yolov7.utils.datasets import LoadImages
-from yolov7.utils.general import check_img_size, check_requirements, check_imshow, non_max_suppression, \
+from yolov7.utils.general_test import check_img_size, check_requirements, check_imshow, non_max_suppression, \
     apply_classifier, \
     scale_coords, xyxy2xywh, strip_optimizer, set_logging, increment_path
 from yolov7.utils.plots import plot_one_box
