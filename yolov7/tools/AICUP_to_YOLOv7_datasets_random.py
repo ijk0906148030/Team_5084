@@ -14,7 +14,7 @@ def arg_parse():
     parser = argparse.ArgumentParser()
 
     parser.add_argument('--AICUP_dir', type=str, default='trainv2', help='your AICUP train dataset path')
-    parser.add_argument('--YOLOv7_dir', type=str, default='yolo_datasets_final', help='converted dataset directory')
+    parser.add_argument('--YOLOv7_dir', type=str, default='yolo_datasets_random', help='converted dataset directory')
     parser.add_argument('--train_ratio', type=float, default=0.8, help='The ratio of the train set when splitting the train set and the validation set')
 
     opt = parser.parse_args()
